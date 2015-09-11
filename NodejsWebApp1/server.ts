@@ -6,7 +6,7 @@ var port = process.env.port || 1337
 http.createServer(function (req, res) {
     
 
-    fs.readFile('users.json', 'utf-8',  function (err, data) {
+    fs.readFile('users.json',  'utf-8',  function (err, data) {
         if (err) throw err;
         console.log(data);
         res.writeHead(200, {
